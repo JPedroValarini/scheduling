@@ -1,15 +1,18 @@
 <template lang="">
   <div>
+    <Header />
     <h1>Vue!</h1>
     <Counter />
-    <p>pika</p>
   </div>
 </template>
 <script>
+
 import Counter from './Counter.vue'
+import Header from './Header.vue'
 export default {
   components: {
-    Counter
+    Counter,
+    Header
   }
 }
 </script>

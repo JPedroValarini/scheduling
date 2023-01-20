@@ -30,8 +30,12 @@ console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify
 // Create Vue App
 import { createApp } from "vue";
 
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from '@fortawesome/free-solid-svg-icons'
 // Import App Components
 import App from "../components/App.vue"
 
+library.add(fas);
 // Create Vue App
-const app = createApp(App).mount("#app")
+const app = createApp(App).component('fa', FontAwesomeIcon).mount("#app")
