@@ -12,7 +12,7 @@ import Header from './Header.vue'
 export default {
   components: {
     Counter,
-    Header
+    Header,
   }
 }
 </script>
